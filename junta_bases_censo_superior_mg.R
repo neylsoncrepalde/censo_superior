@@ -42,5 +42,7 @@ curso = fread("censo_superior_mg_2015_curso.csv", encoding = "Latin-1")
 
 censo = left_join(aluno, curso, by="CO_CURSO")
 rm(aluno, curso)
+exc_ind = c(100,105,107:110,113)
+censo = censo[,-exc_ind]
 #########################################################################
 
