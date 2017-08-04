@@ -20,8 +20,8 @@ names(ies_mg)
 ies_mg = ies_mg[, c(1:3,6:15, 33:39)]
 
 curso = fread("DM_CURSO.CSV", encoding = "Latin-1")
-#manter 2, 92:95
-curso = curso[,c(2,92:95)]
+#manter 2, 14,92:95
+curso = curso[,c(2,14,92:95)]
 names(curso)
 
 curso = left_join(curso, ies_mg, by="NO_IES")
